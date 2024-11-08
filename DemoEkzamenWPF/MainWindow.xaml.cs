@@ -31,5 +31,10 @@ namespace DemoEkzamenWPF
         {
 
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

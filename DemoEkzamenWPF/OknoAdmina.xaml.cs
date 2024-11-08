@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace DemoEkzamenWPF
 {
     /// <summary>
-    /// Логика взаимодействия для Vhod.xaml
+    /// Логика взаимодействия для OknoAdmina.xaml
     /// </summary>
-    public partial class Vhod : Window
+    public partial class OknoAdmina : Window
     {
-        public Vhod()
+        public OknoAdmina()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

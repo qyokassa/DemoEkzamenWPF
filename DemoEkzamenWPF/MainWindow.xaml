@@ -7,14 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
     <Grid Background="#FF434B5B">
+
         <Grid.RowDefinitions>
-
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition/>
-            <RowDefinition/>
-
-
-
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -26,8 +23,10 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="4" Text="Вход" FontSize="30" FontWeight="Light" FontFamily="Sitka Text" Foreground="#FF0A0000" HorizontalAlignment="Center"/>
+        <TextBox  x:Name="loginTextBox" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Text="Логин" FontSize="20" FontWeight="Light" Height="40" Width="400" Background="#FFD2D2D2" />
 
-        <Button Grid.Column="1" Grid.Row="1" Height="50" Width="100" Content="Регистрация" Click="Button_Click" FontFamily="Sitka Display" Foreground="#FF1D102B" BorderBrush="#00000000" FontSize="16">
+        <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Content="Вход" FontSize="20" FontWeight="Light" HorizontalAlignment="Center" Width="200" Height="60" FontFamily="Sitka Display" Foreground="#FF2F1B1B" Click="Button_Click" BorderBrush="{x:Null}">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF848BA7"/>
@@ -35,14 +34,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Grid.Column="2" Grid.Row="1" Height="50" Width="100" Content="Вход" Click="Button_Click_1" FontFamily="Sitka Display" Foreground="Black" BorderBrush="{x:Null}" FontSize="16">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF848BA7"/>
-                    <GradientStop Color="#FF64697D" Offset="1"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+        <PasswordBox x:Name="passwordBox" Grid.Row="1"  Grid.Column="1" Grid.ColumnSpan="2"  FontSize="20" FontWeight="Light" HorizontalAlignment="Center" Width="400" Height="40" Background="#FFD2D2D2" Margin="0,147,0,10" />
 
     </Grid>
 </Window>
